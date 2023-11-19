@@ -1,0 +1,67 @@
+
+
+.personPage{
+    width: 100%;
+    height: 100%;
+}
+
+.personal{
+    width: 100%;
+  }
+  
+  .searchItem{
+    background: none;
+  }
+  
+  .tasksPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .personInfo{
+    width: 100%;
+    height: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Krona one', sans-serif;
+  }
+  
+  .central{
+    width: 800px;
+    margin: auto;
+  }
+  
+  .item{
+    width: 200px;
+    margin: 30px;
+  }
+  
+  span{
+    font-family: 'Krona one', sans-serif;
+    padding-bottom: 20px;
+  }
+  
+  input{
+    height: 20px;    
+  }
+  
+  button{
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    background: red;
+    color: black;
+    font-family: 'Krona one';
+    padding: 10px;
+  }
+  
+  button:hover{
+    opacity: 0.8;
+  }
+

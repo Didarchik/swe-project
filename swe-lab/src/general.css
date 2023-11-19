@@ -1,0 +1,31 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+
+      width: 100%;
+      height: 100%;
+  }
+.generalBlock{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+    align-items: center ;
+    margin: auto;
+}
+
+.items{
+    width: 250px;
+    height: 75px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Krona One';
+    font-size: 20px;
+    cursor: pointer;
+}
