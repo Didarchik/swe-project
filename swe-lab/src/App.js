@@ -7,6 +7,7 @@ import Tasks from "./components/Tasks";
 import Main from "./components/Main"
 import './index.css';
 import AdminPage from "./AdminPage";
+import Authorization from "./Authorzation";
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
               <div className="block d-flex align-center">
                 <PersonInfo />
             </div>
+        } />
+        <Route path="/auth" element={
+          <>
+            <Authorization />
+          </>
         } />
         <Route path="/general" element={
           <>

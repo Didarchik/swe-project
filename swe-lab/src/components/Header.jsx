@@ -23,7 +23,7 @@ function Header() {
             <img src='./assets/instagram.png' alt="insta" className='pr-20'/>
             <img src='./assets/facebook.png' alt="facebook" className='pr-20'/>
             <img src='./assets/twitter.png' alt="twitter" className='pr-20'/>
-            <Link to="/general"><img src='./assets/img/account.svg' alt='account' /></Link>
+            <Link to="/auth"><img src='./assets/img/account.svg' alt='account' /></Link>
         </ul>
     </div>
   )

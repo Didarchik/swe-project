@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Overlay from './components/Overlay'
 import Header from './components/Header'
 import data from './data.js';
+import { Link } from 'react-router-dom';
 
 function AdminPage() {
   const [name, setName] = useState("");
@@ -35,7 +36,7 @@ function AdminPage() {
             <h2>Users</h2>
             <div className='searchAdmin'>
                 <input className='adminSearch mr-50' placeholder='search by name' onChange={(e) => setName(e.target.value)}/>
-                <button>Register new user</button>
+                <Link to="/general"><button>Register new user</button></Link>
             </div>
             <h3 style={{color: 'white'}}>Total Users <span style={{color: 'red', paddingLeft: '20px'}}>{list.length}</span></h3>
             <div className='userInfo d-flex'>
