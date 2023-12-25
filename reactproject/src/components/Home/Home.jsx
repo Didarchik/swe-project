@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Home.module.scss'
 import {Card, Button} from "react-bootstrap"
-import foodPicture from "../../assets/img/food.png"
+import foodPicture from "../../assets/img/food.webp"
 function Home() {
   return (
     <div className='home_page'>
