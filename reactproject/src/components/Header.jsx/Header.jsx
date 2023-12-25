@@ -13,7 +13,7 @@ function Header() {
   }
   return (
     <div className='header'>
-      <Navbar fixed="top" expand='lg' data-bs-theme="light" expanded={toggle} style={{background: 'aqua'}}>
+      <Navbar expand='lg' data-bs-theme="light" expanded={toggle} style={{background: 'aqua'}}>
         <Container>
           <Navbar.Brand href="#home" className="fs-3"><img src={logo}/></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handle}/>
