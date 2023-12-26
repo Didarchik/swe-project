@@ -13,10 +13,7 @@ function Home() {
               Foodie Pizza бұл {" "} 
               <ReactTyped strings={["дәмді пицца", "тегін сусындар", "атмосфералық өлеңдер"]} typeSpeed={100} loop/>
               </Card.Text>
-              <Button variant='alert' className='btn2 d-flex' >
-                <p>Тапсырыс беру</p>
-                <p>-></p>
-              </Button>
+              <Button variant='alert' className='btn2 d-flex' >Тапсырыс беру</Button>
             </Card.Body>
           </Card>
             <img src={foodPicture} />

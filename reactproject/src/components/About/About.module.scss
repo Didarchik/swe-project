@@ -1,0 +1,106 @@
+$breakpoint-small: 300px;
+$breakpoint-medium: 700px;
+$breakpoint-large: 1000px;
+
+@mixin respond-to($size){
+    @if $size == small{
+        @media (min-width: $breakpoint-small) {@content ;}
+    }
+    @else if $size == medium{
+        @media (min-width: $breakpoint-medium) {@content ;}
+    }
+    @else if $size == large{
+        @media (min-width: $breakpoint-large) {@content ;}
+    }
+}
+
+*{
+    font-family: "Montserrat", 'sans-serif';
+}
+.about_page{
+    @include respond-to(small){
+        display: flex;
+        justify-content: center;
+    }
+    @include respond-to(medium){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img{
+        @include respond-to(small){
+            width: 0%;
+            height: 0%;
+        }
+        @include respond-to(medium){
+            width: 600px;
+            height: 450px;
+        }
+        @include respond-to(large){
+            width: 700px;
+            height: 550px;
+        }
+    }
+    .card{
+        
+        margin-top: -20px;
+        border: none;
+        background: none;
+        @include respond-to(small){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 450px;
+        }
+        @include respond-to(medium){
+            display: flex;
+            justify-content: center;
+            align-items:baseline;
+            width: 700px;
+        }
+        .about{
+            font-size: 20px;
+            font-weight: 700;
+            color: orange;
+        }
+        .title{
+            font-weight: 700;
+            @include respond-to(small){
+                font-size: 25px;
+            }
+            @include respond-to(medium){
+                font-size: 40px;
+            }
+            @include respond-to(large){
+                font-size: 50px;
+            }
+        }
+        .cardText{
+            color: rgb(130, 130, 130);
+            @include respond-to(small){
+                font-size: 15px;
+            }
+            @include respond-to(medium){
+                font-size: 20px;
+            }
+            @include respond-to(large){
+                font-size: 25px;
+            }
+        }
+        .btn2{
+            padding: 10px;
+            background-color: orange;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 16px;
+            &:hover{
+                opacity: 0.75;
+            }
+        }
+        .videoIcon{
+            cursor: pointer;
+        }
+    }
+}
