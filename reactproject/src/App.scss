@@ -62,37 +62,43 @@ $breakpoint-xlarge: 1200px;
     align-items: center;
     justify-content: space-around;
     img{
-      position: relative;
+      position: fixed;
       z-index: 10;
       @include respond-to(small){
-        width: 0%;
-        height: 0%;
+        position: relative;
+        width: 50%;
+        height: 10%;
+        opacity: 0.5;
       }
       @include respond-to(medium){
         width: 500px;
         height: 500px;
         margin-top: 100px; 
+        opacity: 1;
       }
       @include respond-to(large){
         width: 700px;
         height: 800px;
       }
     }
-      .card{
+    .card{
         position: relative;
         z-index: 11;
         width: 1100px;
         background: none;
         border: none;
         padding: 50px;
+        margin-left: -10px;
         .cardTitle{
           @include respond-to(small){
             font-size: 25px;
             font-weight: 700;
+            width: 300px;
           }
           @include respond-to(medium){
             font-size: 40px;
             font-weight: 700;
+            width: fit-content;
           }
           @include respond-to(large){
             font-family: 'Montserrat';
@@ -106,6 +112,7 @@ $breakpoint-xlarge: 1200px;
           @include respond-to(small){
             font-size: 15px;
             font-weight: 700;
+            width: 350px;
           }
           @include respond-to(medium){
             font-size: 20px;
