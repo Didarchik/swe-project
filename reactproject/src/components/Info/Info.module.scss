@@ -1,5 +1,5 @@
 $breakpoint-small: 300px;
-$breakpoint-medium: 700px;
+$breakpoint-medium: 800px;
 $breakpoint-large: 1000px;
 
 @mixin respond-to($size){
@@ -16,7 +16,6 @@ $breakpoint-large: 1000px;
 
 .info_block{
     margin-top: 100px;
-    border: 2px solid black;
     .upperBlock{
         display: flex;
         justify-content: space-around;
@@ -24,7 +23,7 @@ $breakpoint-large: 1000px;
         background: none;
         border: none;
         @include respond-to(small){
-            width: 400px;
+            width: 350px;
         }
         @include respond-to(medium){
             width: 750px;
@@ -63,22 +62,59 @@ $breakpoint-large: 1000px;
 
 
     .lowerBlock{
-        border: 2px solid red;
         position: relative;
         margin: 50px;
         .items{
-            width: 350px;
             align-items: center;
-            padding: 20px;
             margin: 20px;
+            padding: 20px 15px;
+
+            @include respond-to(small){
+                width: 200px;
+            }
+            @include respond-to(medium){
+                width: 200px;
+            }
+            @include respond-to(large){
+                width: 300px;
+                height: 500px;
+            }
             .itemTitle{
                 font-weight: 700;
-                font-size: 30px;
+
                 padding: 20px;
+                @include respond-to(small){
+                    font-size: 20px;
+                }
+                @include respond-to(medium){
+                    font-size: 25px;
+                }
+                @include respond-to(large){
+                    font-size: 30px;                
+                }
             }
             .itemText{
                 font-weight: 500;
-                font-size: 20px;
+                @include respond-to(small){
+                    font-size: 12.5px;
+                }
+                @include respond-to(medium){
+                    font-size: 15px;
+                }
+                @include respond-to(large){
+                    font-size: 20px;                
+                }
+            }
+            img{
+                @include respond-to(small){
+                    width: 50px;
+                }
+                @include respond-to(medium){
+                    width: 80px;
+                }
+                @include respond-to(large){
+                    width: 150px;                
+                }
             }
         }
     }

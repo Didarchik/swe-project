@@ -19,7 +19,7 @@ function Info() {
                 <Card.Text className={style.itemText}>Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.</Card.Text>
             </Card>
             <Card className={style.items}>
-                <img src={fingerIcon}/>
+                <img src={fingerIcon} />
                 <Card.Title className={style.itemTitle}>Pick Meals</Card.Title>
                 <Card.Text className={style.itemText}>Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.</Card.Text>
             </Card>
