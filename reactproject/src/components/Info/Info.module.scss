@@ -1,0 +1,85 @@
+$breakpoint-small: 300px;
+$breakpoint-medium: 700px;
+$breakpoint-large: 1000px;
+
+@mixin respond-to($size){
+    @if $size == small{
+        @media (min-width: $breakpoint-small) {@content ;}
+    }
+    @else if $size == medium{
+        @media (min-width: $breakpoint-medium) {@content ;}
+    }
+    @else if $size == large{
+        @media (min-width: $breakpoint-large) {@content ;}
+    }
+}
+
+.info_block{
+    margin-top: 100px;
+    border: 2px solid black;
+    .upperBlock{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: none;
+        border: none;
+        @include respond-to(small){
+            width: 400px;
+        }
+        @include respond-to(medium){
+            width: 750px;
+
+        }
+        .info{
+            font-size: 20px;
+            font-weight: 700;
+            color: orange;
+        }
+        .title{
+            font-weight: 700;
+            @include respond-to(small){
+                font-size: 25px;
+            }
+            @include respond-to(medium){
+                font-size: 40px;
+            }
+            @include respond-to(large){
+                font-size: 50px;
+            }
+        }
+        .cardText{
+            color: rgb(130, 130, 130);
+            @include respond-to(small){
+                font-size: 15px;
+            }
+            @include respond-to(medium){
+                font-size: 20px;
+            }
+            @include respond-to(large){
+                font-size: 25px;
+            }
+        }
+    }
+
+
+    .lowerBlock{
+        border: 2px solid red;
+        position: relative;
+        margin: 50px;
+        .items{
+            width: 350px;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            .itemTitle{
+                font-weight: 700;
+                font-size: 30px;
+                padding: 20px;
+            }
+            .itemText{
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+    }
+}
