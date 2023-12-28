@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useReducer, useRef } from 'react'
 import foodPhoto from "../../assets/img/aboutFood.png"
 import videoIcon from "../../assets/videoButton.png"
 import {Card, Button} from "react-bootstrap"
 import style from "./About.module.scss"
 
-function About() {
+function About({inputRef, focus}) {
   return (
-    <div className={style.about_page}>
+    <div className={style.about_page} tabIndex="0" ref={el=> inputRef.current[1] = el}>
         <img src={foodPhoto} />
         <Card className={style.card}>
 

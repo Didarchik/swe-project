@@ -3,9 +3,9 @@ import style from './Home.module.scss'
 import {Card, Button} from "react-bootstrap"
 import foodPicture from "../../assets/img/food.webp"
 import ReactTyped from "react-typed"
-function Home() {
+function Home({inputRef}) {
   return (
-    <div className='home_page'>
+    <div className='home_page' ref={el => inputRef.current[0] = el}>
           <Card className='card'>
             <Card.Title className='cardTitle'>Сіздің сүйікті тағамдарыңыз бізбен, Foodie-мен</Card.Title>
             <Card.Body>

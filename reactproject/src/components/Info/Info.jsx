@@ -4,9 +4,9 @@ import {Card, Button} from "react-bootstrap"
 import pickMeal from "../../assets/pickMeal.png"
 import truckIcon from "../../assets/truck.png"
 import fingerIcon from "../../assets/finger.png"
-function Info() {
+function Info({inputRef}) {
   return (
-    <div className={`d-flex align-items-center flex-column ${style.info_block}`}>
+    <div tabIndex="0" ref={el => inputRef.current[2] = el} className={`d-flex align-items-center flex-column ${style.info_block}`}>
         <Card className={style.upperBlock}>
             <Card.Title className={style.info}>Деректер</Card.Title>
             <Card.Title className={style.title}>How it works</Card.Title>
